@@ -12,6 +12,7 @@ public class RubyController : MonoBehaviour
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
+
     }
 
     // Update is called once per frame
@@ -19,8 +20,8 @@ public class RubyController : MonoBehaviour
     {
          horizontal = Input.GetAxis("Horizontal");
          vertical = Input.GetAxis("Vertical");
-    }
 
+    }
     void FixedUpdate()
     {
         Vector2 position = rigidbody2d.position;
